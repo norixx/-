@@ -1,0 +1,170 @@
+@charset 'utf-8';
+
+.container {
+  width: 960px;
+  background-color: beige;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-h {
+  /* font-size: 32px; */
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background-image: url(../img/midashi_square.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 15px auto;
+  padding-bottom: 30px;
+}
+
+.section-h span {
+  display: block;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.section-h-hr {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-h-hr span {
+  font-size: 1rem;
+  font-weight: normal;
+  /* background: 色 画像 リピート X Y; */
+  background: url(../img/midashi_square.png) no-repeat left center;
+  padding-left: 20px;
+  background-size: 15px auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* ヘッダー
+========================================= */
+
+.site-header {
+  padding: 30px 0;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-img {
+  width: 80px;
+}
+
+/* メインビジュアル
+========================================= */
+
+.main-visual {
+  margin-bottom: 50px;
+}
+
+.main-visual-img {
+  width: 100%;
+}
+
+/* 季節で訪れたいスポット 
+========================================= */
+
+.recom-menu {
+  margin-bottom: 30px;
+}
+
+.recom-menu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.recom-menu li {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #999;
+}
+.recom-menu li.active {
+  color: #000;
+  padding-bottom: 20px;
+  background: url(../img/triangle_under.png)no-repeat center bottom;
+  background-size: 8.5px auto;
+}
+
+.recom-menu li span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.recom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recom-article {
+  width: 23.5%;
+  position: relative;
+}
+
+.recom-article img {
+  width: 100%;
+}
+
+.recom-article h3 {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.recom-article a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.recom-article a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+}
+
+
+/* 最新おすすめスポット */
+.spot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spot-article {
+  width: 32%;
+}
+
+.spot-article img {
+  width: 100%;
+}
