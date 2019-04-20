@@ -137,6 +137,7 @@ img {
   text-decoration: none;
 }
 
+/* スマホ用折りたたみメニュー */
 .slicknav_menu {
   display: none;
   background: transparent;
@@ -145,7 +146,9 @@ img {
   left: 0;
   top: 0;
   padding: 0;
+  z-index: 1;
 }
+
 .slicknav_menu a {
   color: #000;
 }
