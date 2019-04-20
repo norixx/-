@@ -8,7 +8,9 @@
   <meta>
   <title>春夏秋冬 JOURNEY MAP</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="./js/slicknav.min.css">
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body>
@@ -29,6 +31,16 @@
       <a href=""><img src="img/logo.png" alt="春夏秋冬 JOURNEY MAP" class="logo-img"></a>
     </h1>
   </header>
+
+  <!-- ナビゲーション -->
+  <nav class="global-nav">
+    <ul id="nav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">季節で訪れたいスポット</a></li>
+      <li><a href="#">最新おすすめスポット</a></li>
+      <li><a href="#">お知らせ</a></li>
+    </ul>
+  </nav>
 
   <!-- メインビジュアル -->
   <div class="main-visual">
@@ -69,7 +81,6 @@
           <a href="#">
             <img src="img/kisetsu1.jpg" alt="">
             <h3>箱根九頭龍神社月次祭</h3>
-            黒
           </a>
         </div>
         <div class="recom-article">
@@ -129,65 +140,87 @@
         </article>
       </div>
 
-      <div>
-        <a href="#">おすすめスポット一覧</a>
+      <div class="text-center">
+        <a href="#" class="spot-link">おすすめスポット一覧</a><!-- <br>
+        <a href="#" class="spot-link2">おすすめスポット一覧</a> -->
       </div>
 
     </section>
 
-    <!-- お知らせ -->
-    <section>
-      <h2 class="section-h-hr">
-        お知らせ
-        <span>information</span>
-      </h2>
+  <div class="info-sns">
+  
+      <!-- お知らせ -->
+      <section class="info">
+        <h2 class="section-h-hr">
+          お知らせ
+          <span>information</span>
+        </h2>
+  
+        <ul class="info-list">
+          <li>
+            <time datetime="2018-10-13">
+              2018年10月13日
+            </time>
+            <a href="#">サイトをリニューアルいたしました！</a>
+          </li>
+          <li>
+            <time datetime="2018-08-05">
+              2018年8月5日
+            </time>
+            <a href="#">このサイトを雑誌で取り上げていただきました</a>
+          </li>
+          <li>
+            <time datetime="2018-07-19">
+              2018年7月19日
+            </time>
+            <a href="#">台風の影響で7月の四国・関西・中国地方への旅にはご注意ください</a>
+          </li>
+        </ul>
+  
+      </section>
+  
+      <!-- facebook -->
+      <section class="sns">
+        <h2 class="section-h-hr">
+          facebook
+          <span>SNS updates</span>
+        </h2>
+        <div class="fb-page" data-href="https://www.facebook.com/tabiiro/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tabiiro/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tabiiro/">旅色-tabiiro-</a></blockquote></div>
+      </section>
 
-      <ul>
-        <li>
-          <time datetime="2018-10-13">
-            2018年10月13日
-          </time>
-          <a href="#">サイトをリニューアルいたしました！</a>
-        </li>
-        <li>
-          <time datetime="2018-08-05">
-            2018年8月5日
-          </time>
-          <a href="#">このサイトを雑誌で取り上げていただきました</a>
-        </li>
-        <li>
-          <time datetime="2018-07-19">
-            2018年7月19日
-          </time>
-          <a href="#">台風の影響で7月の四国・関西・中国地方への旅にはご注意ください</a>
-        </li>
-      </ul>
+    </div><!-- /.info-sns -->
 
-    </section>
-
-    <!-- facebook -->
-    <section>
-      <h2 class="section-h-hr">
-        facebook
-        <span>SNS updates</span>
-      </h2>
-      <div class="fb-page" data-href="https://www.facebook.com/tabiiro/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/tabiiro/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/tabiiro/">旅色-tabiiro-</a></blockquote></div>
-    </section>
   </main>
 
   </div><!-- /.cotainer -->
 
   <!-- フッター -->
-  <footer>
-    <ul>
+  <footer class="site-footer">
+    <ul class="nav-footer">
       <li>このサイトについて</li>
       <li>プライバシーポリシー</li>
       <li>リンク集</li>
     </ul>
 
-    <p><small>2018 Copyright 春夏秋冬 JOURNEY MAP. All Rights Reserved.</small></p>
+    <p class="copyright text-center"><small>2018 &copy; 春夏秋冬 JOURNEY MAP. All Rights Reserved.</small></p>
   </footer>
 
+  <!-- 1.jQuery本体 -->
+  <script src="./js/jquery-3.3.1.min.js"></script>
+
+  <!-- 2.プラグインファイル -->
+  <script src="./js/jquery.slicknav.min.js"></script>
+
+  <!-- 3.設定 -->
+  <script>
+    // $('.logo').css('background','yellow');
+    // $('.logo').fadeOut();
+
+    $('#nav').slicknav({
+      label: ''
+    });
+
+  </script>
 
 </body>
 

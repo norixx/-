@@ -1,22 +1,4 @@
 @charset "UTF-8";
-/* 共通スタイル */
-body {
-  /* フォントの設定 */
-  font-size: 16px;
-  /* フォントの種類 */
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Yu Gothic', YuGothic, Roboto, Meiryo, sans-serif;
-  /* 背景色 */
-  background: #fff;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-img {
-  vertical-align: top;
-}
-
 .container {
   width: 960px;
   background-color: beige;
@@ -115,6 +97,14 @@ img {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
+  color: #999;
+}
+
+.recom-menu li.active {
+  color: #000;
+  padding-bottom: 20px;
+  background: url(../img/triangle_under.png) no-repeat center bottom;
+  background-size: 8.5px auto;
 }
 
 .recom-menu li span {
@@ -124,12 +114,7 @@ img {
   margin-bottom: 5px;
 }
 
-.recom-article {
-  clear: both;
-  width: 24%;
-}
-
-.recoms {
+.recom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,30 +123,59 @@ img {
           justify-content: space-between;
 }
 
+.recom-article {
+  width: 23.5%;
+  position: relative;
+}
+
+.recom-article:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .1;
+}
+
 .recom-article img {
   width: 100%;
 }
 
-.recom-article a {
-  display: block;
-  position: relative;
-  color: #fff;
-}
-
-.recom-article a h3 {
+.recom-article h3 {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 5px;
   z-index: 1;
 }
 
-.recom-article a:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.recom-article a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* 最新おすすめスポット */
+.spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spot-article {
+  width: 32%;
+}
+
+.spot-article img {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.spot-article a {
+  text-decoration: none;
+  color: #000;
 }
 /*# sourceMappingURL=style-test.css.map */
